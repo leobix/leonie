@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Leonie Troeger{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -14,10 +14,10 @@
             <nav>
                 <div class="logo">Leonie Troeger</div>
                 <div class="nav-links">
-                    <a href="{{ url_for('index') }}" {% if request.endpoint == 'index' %}class="active"{% endif %}>Home</a>
-                    <a href="{{ url_for('projects') }}" {% if request.endpoint == 'projects' %}class="active"{% endif %}>Projects</a>
-                    <a href="{{ url_for('blog') }}" {% if request.endpoint == 'blog' %}class="active"{% endif %}>Blog</a>
-                    <a href="{{ url_for('contact') }}" {% if request.endpoint == 'contact' %}class="active"{% endif %}>Contact</a>
+                    <a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a>
+                    <a href="/projects" {% if request.path == '/projects' %}class="active"{% endif %}>Projects</a>
+                    <a href="/blog" {% if request.path == '/blog' %}class="active"{% endif %}>Blog</a>
+                    <a href="/contact" {% if request.path == '/contact' %}class="active"{% endif %}>Contact</a>
                 </div>
             </nav>
         </div>
