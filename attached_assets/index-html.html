@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonie Troeger | Student-Athlete & MS in Information Systems</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* Header and Navigation */
+        header {
+            background-color: #2c3e50;
+            padding: 1.5rem 0;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            padding: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        .active {
+            border-bottom: 3px solid #3498db;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/800') center/cover no-repeat;
+            color: white;
+            padding: 0 2rem;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Skills Section */
+        .skills {
+            padding: 5rem 0;
+            background-color: #ecf0f1;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Bio Box Styles */
+        .bio-box {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .bio-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .bio-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .bio-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .bio-header h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .bio-title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .bio-details {
+            padding: 2rem;
+        }
+        
+        .bio-item {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #ecf0f1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .bio-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .bio-label {
+            font-weight: 700;
+            color: #2c3e50;
+            width: 180px;
+            flex-shrink: 0;
+        }
+        
+        .bio-value {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .bio-label, .bio-value {
+                width: 100%;
+            }
+            
+            .bio-label {
+                margin-bottom: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Leonie Troeger</div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Student-Athlete & MS in Information Systems</h1>
+                <p>Balancing academic excellence with athletic achievement. Passionate about leveraging technology to solve complex business problems and drive innovation.</p>
+                <a href="projects.html" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Alex Chen">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Leonie</h3>
+                    <p>I'm a dedicated student-athlete pursuing a Master's degree in Information Systems, with a focus on business analytics and data-driven decision making.</p>
+                    <p>My academic journey is complemented by my commitment to athletics, where I've developed strong leadership, time management, and teamwork skills that transfer seamlessly to professional environments.</p>
+                    <p>When I'm not studying or training, I'm passionate about technology innovation, sustainable business practices, and mentoring younger athletes.</p>
+                    <a href="contact.html" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Box Section -->
+    <section class="bio-box">
+        <div class="container">
+            <h2 class="section-title">Professional Bio</h2>
+            <div class="bio-container">
+                <div class="bio-card">
+                    <div class="bio-header">
+                        <h3>Leonie Troeger</h3>
+                        <p class="bio-title">Student-Athlete & MS in Information Systems</p>
+                    </div>
+                    <div class="bio-details">
+                        <div class="bio-item">
+                            <span class="bio-label">Education:</span>
+                            <span class="bio-value">Master of Science in Information Systems</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">University:</span>
+                            <span class="bio-value">Your University Name</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Sport:</span>
+                            <span class="bio-value">Your Sport</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Athletic Achievements:</span>
+                            <span class="bio-value">Conference Champion, Team Captain, Academic All-American</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Research Interests:</span>
+                            <span class="bio-value">Data Analytics, Business Intelligence, Sports Analytics</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Technical Skills:</span>
+                            <span class="bio-value">SQL, Python, R, Tableau, Power BI</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Languages:</span>
+                            <span class="bio-value">English (Fluent), German (Native), Spanish (Intermediate)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Data Analytics</h3>
+                    <p>Analyzing complex datasets using SQL, Python, and data visualization tools to extract actionable insights and support strategic decision-making.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Information Systems</h3>
+                    <p>Designing and implementing information systems solutions that bridge business needs with technological capabilities.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Leadership & Teamwork</h3>
+                    <p>Leading by example both on and off the field, with proven ability to motivate teams, resolve conflicts, and achieve collective goals under pressure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Leonie Troeger. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
