@@ -378,3 +378,139 @@ footer {
 .project-media {
     display: block;
 }
+
+/* About section styles */
+.about {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h3 {
+    color: #c41e3a;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Bio Box Styles */
+.bio-box {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.bio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+.bio-header {
+    background-color: #c41e3a;
+    color: white;
+    padding: 1.5rem;
+}
+
+.bio-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.bio-title {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.bio-details {
+    padding: 1.5rem;
+}
+
+.bio-item {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.bio-label {
+    font-weight: 600;
+    min-width: 120px;
+    color: #333;
+}
+
+.bio-value {
+    flex: 1;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #c41e3a;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Page Header */
+.page-header {
+    background-color: #c41e3a;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
