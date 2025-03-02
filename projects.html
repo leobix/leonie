@@ -1,8 +1,27 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonie Troeger | Projects</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Leonie Troeger</div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-{% block title %}Leonie Troeger | Projects{% endblock %}
-
-{% block content %}
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
@@ -21,10 +40,10 @@
                     <p>Innovative solutions in Information Systems and Data Analytics</p>
                 </div>
                 <!-- Healthcare Digital Twin Project -->
-                <div class="project-card">
+                <div class="project-card" data-categories="IoT,AI,Healthcare">
                     <div class="project-media">
-                        <video controls poster="/static/images/healthcare.jpg">
-                            <source src="/static/videos/healthcare_twin.mp4" type="video/mp4">
+                        <video controls poster="static/images/healthcare.jpg">
+                            <source src="static/videos/healthcare_twin.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -44,10 +63,10 @@
                 </div>
 
                 <!-- KitchenAid Morocco Project -->
-                <div class="project-card">
+                <div class="project-card" data-categories="Marketing,Analysis">
                     <div class="project-media">
-                        <video controls poster="/static/images/marketing.jpg">
-                            <source src="/static/videos/moroccan_mixer.mp4" type="video/mp4">
+                        <video controls poster="static/images/marketing.jpg">
+                            <source src="static/videos/moroccan_mixer.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -73,9 +92,9 @@
                     <p>Excellence in Track and Field (Javelin Throw)</p>
                 </div>
                 <!-- NCAA Championships -->
-                <div class="project-card">
+                <div class="project-card" data-categories="Competition,Performance">
                     <div class="project-image">
-                        <img src="/static/images/ncaa.jpg" alt="NCAA Championships">
+                        <img src="static/images/ncaa.jpg" alt="NCAA Championships">
                     </div>
                     <div class="project-content">
                         <div class="project-categories">
@@ -92,9 +111,9 @@
                 </div>
 
                 <!-- Conference Championships -->
-                <div class="project-card">
+                <div class="project-card" data-categories="Championship,Leadership">
                     <div class="project-image">
-                        <img src="/static/images/conference.jpg" alt="Conference Championships">
+                        <img src="static/images/conference.jpg" alt="Conference Championships">
                     </div>
                     <div class="project-content">
                         <div class="project-categories">
@@ -112,8 +131,20 @@
             </div>
         </div>
     </section>
-{% endblock %}
 
-{% block extra_js %}
-<script src="/static/js/projects.js"></script>
-{% endblock %}
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Leonie Troeger. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/projects.js"></script>
+</body>
+</html>
