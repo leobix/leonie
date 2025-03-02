@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Leonie Troeger | Projects{% endblock %}
+
+{% block content %}
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Journey</h1>
+            <p>Exploring the intersection of academic excellence and athletic achievement.</p>
+        </div>
+    </section>
+
+    <!-- Split Projects Section -->
+    <section class="projects-page">
+        <div class="projects-container">
+            <!-- Academic Projects Section -->
+            <div class="project-section academic-section">
+                <div class="section-header">
+                    <h2>Academic Projects</h2>
+                    <p>Innovative solutions in Information Systems and Data Analytics</p>
+                </div>
+                <!-- Healthcare Digital Twin Project -->
+                <div class="project-card">
+                    <div class="project-media">
+                        <video controls poster="{{ url_for('static', filename='images/healthcare.jpg') }}">
+                            <source src="{{ url_for('static', filename='videos/healthcare_twin.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-categories">
+                            <span class="category">IoT</span>
+                            <span class="category">AI</span>
+                            <span class="category">Healthcare</span>
+                        </div>
+                        <h3>Digital Twin Application in Healthcare</h3>
+                        <p>Developed a cutting-edge health platform leveraging IoT, AI, and cloud computing for real-time diagnostics and insights. Designed 3D visualizations and predictive models for personalized health management.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Details</a>
+                            <a href="#" class="btn btn-outline">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KitchenAid Morocco Project -->
+                <div class="project-card">
+                    <div class="project-media">
+                        <video controls poster="{{ url_for('static', filename='images/marketing.jpg') }}">
+                            <source src="{{ url_for('static', filename='videos/moroccan_mixer.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-categories">
+                            <span class="category">International Marketing</span>
+                            <span class="category">Market Analysis</span>
+                        </div>
+                        <h3>KitchenAid in Morocco Analysis</h3>
+                        <p>Conducted comprehensive market analysis and developed strategic business model for KitchenAid's expansion into Morocco, focusing on cultural adaptation and market positioning.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Case Study</a>
+                            <a href="#" class="btn btn-outline">Research</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Athletic Achievements Section -->
+            <div class="project-section athletic-section">
+                <div class="section-header">
+                    <h2>Athletic Achievements</h2>
+                    <p>Excellence in Track and Field (Javelin Throw)</p>
+                </div>
+                <!-- NCAA Championships -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/ncaa.jpg') }}" alt="NCAA Championships">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-categories">
+                            <span class="category">National Competition</span>
+                            <span class="category">Elite Performance</span>
+                        </div>
+                        <h3>NCAA National Championships</h3>
+                        <p>Qualified for NCAA Outdoor National Championships in 2022 and 2023, representing the highest level of collegiate athletic competition while maintaining academic excellence.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Journey</a>
+                            <a href="#" class="btn btn-outline">Highlights</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference Championships -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/conference.jpg') }}" alt="Conference Championships">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-categories">
+                            <span class="category">Championship</span>
+                            <span class="category">Leadership</span>
+                        </div>
+                        <h3>Conference Championships Success</h3>
+                        <p>All-American Conference (AAC) Champion 2023 and Runner-up 2022. Demonstrated consistent high-level performance and leadership in collegiate athletics.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Achievements</a>
+                            <a href="#" class="btn btn-outline">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Leonie Troeger | MS in Information Systems Student & Athlete{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-images">
+                <div class="hero-image professional">
+                    <img src="{{ url_for('static', filename='images/professional.jpg') }}" alt="Professional Leonie">
+                </div>
+                <div class="hero-image athletic">
+                    <img src="{{ url_for('static', filename='images/athletic.jpg') }}" alt="Athletic Leonie">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>MS in Information Systems Student & Athlete</h1>
+                <p>Balancing academic excellence with athletic achievement. Passionate about leveraging technology to solve complex business problems and drive innovation.</p>
+                <a href="{{ url_for('projects') }}" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    {% include '_sections.html' %}
+{% endblock %}
