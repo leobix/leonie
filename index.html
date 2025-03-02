@@ -1,26 +1,129 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonie Troeger | MS in Information Systems Student & Athlete</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Leonie Troeger</div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-{% block title %}Leonie Troeger | MS in Information Systems Student & Athlete{% endblock %}
-
-{% block content %}
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-images">
                 <div class="hero-image professional">
-                    <img src="/static/images/professional.jpg" alt="Professional Leonie">
+                    <img src="static/images/professional.jpg" alt="Professional Leonie">
                 </div>
                 <div class="hero-image athletic">
-                    <img src="/static/images/athletic.jpg" alt="Athletic Leonie">
+                    <img src="static/images/athletic.jpg" alt="Athletic Leonie">
                 </div>
             </div>
             <div class="hero-content">
                 <h1>MS in Information Systems Student & Athlete</h1>
                 <p>Balancing academic excellence with athletic achievement. Passionate about leveraging technology to solve complex business problems and drive innovation.</p>
-                <a href="/projects" class="btn">View My Work</a>
+                <a href="projects.html" class="btn">View My Work</a>
             </div>
         </div>
     </section>
 
-    {% include '_sections.html' %}
-{% endblock %}
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello, I'm Leonie</h3>
+                    <p>I'm a graduate student-athlete at the University of Washington, combining academic excellence with athletic achievement. As an international student, I bring fresh perspectives to technology and innovation.</p>
+                    <p>My journey includes qualifying for NCAA Championships, winning conference titles and becoming a german national chammpion, while maintaining academic excellence in Information Systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Box Section -->
+    <section class="bio-box">
+        <div class="container">
+            <h2 class="section-title">Professional Bio</h2>
+            <div class="bio-container">
+                <div class="bio-card">
+                    <div class="bio-header">
+                        <h3>Leonie Troeger:</h3>
+                        <p class="bio-title">MS in Information Systems Student & Athlete</p>
+                    </div>
+                    <div class="bio-details">
+                        <div class="bio-item">
+                            <span class="bio-label">Education:</span>
+                            <span class="bio-value">MS in Information Systems @ University of Washington | BBA in Marketing & Information Systems @ University of Cincinnati</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Athletic Achievement:</span>
+                            <span class="bio-value">NCAA National Championships Qualifier, AAC Champion, Academic All-District</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Expertise:</span>
+                            <span class="bio-value">Data Analysis • Business Intelligence • Information Security</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Tech Stack:</span>
+                            <span class="bio-value">Python • SQL • C# • HTML • Visual Studio • SSMS</span>
+                        </div>
+                        <div class="bio-item">
+                            <span class="bio-label">Languages:</span>
+                            <span class="bio-value">German (Native) • English (Fluent)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Technical Mastery</h3>
+                    <p>Full-stack development expertise with modern technologies. Specializing in data analysis and business intelligence solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Athletic Excellence</h3>
+                    <p>Division 1 athlete with national championships experience. Proven track record of balancing high-performance athletics with academic achievement.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Leadership</h3>
+                    <p>Demonstrated leadership through athletic achievements and academic excellence. Strong focus on team success and continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Leonie Troeger. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
