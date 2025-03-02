@@ -23,8 +23,8 @@
                 <!-- Healthcare Digital Twin Project -->
                 <div class="project-card">
                     <div class="project-media">
-                        <video controls poster="{{ url_for('static', filename='images/healthcare.jpg') }}">
-                            <source src="{{ url_for('static', filename='videos/healthcare_twin.mp4') }}" type="video/mp4">
+                        <video controls poster="/static/images/healthcare.jpg">
+                            <source src="/static/videos/healthcare_twin.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -46,8 +46,8 @@
                 <!-- KitchenAid Morocco Project -->
                 <div class="project-card">
                     <div class="project-media">
-                        <video controls poster="{{ url_for('static', filename='images/marketing.jpg') }}">
-                            <source src="{{ url_for('static', filename='videos/moroccan_mixer.mp4') }}" type="video/mp4">
+                        <video controls poster="/static/images/marketing.jpg">
+                            <source src="/static/videos/moroccan_mixer.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -75,7 +75,7 @@
                 <!-- NCAA Championships -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="{{ url_for('static', filename='images/ncaa.jpg') }}" alt="NCAA Championships">
+                        <img src="/static/images/ncaa.jpg" alt="NCAA Championships">
                     </div>
                     <div class="project-content">
                         <div class="project-categories">
@@ -94,7 +94,7 @@
                 <!-- Conference Championships -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="{{ url_for('static', filename='images/conference.jpg') }}" alt="Conference Championships">
+                        <img src="/static/images/conference.jpg" alt="Conference Championships">
                     </div>
                     <div class="project-content">
                         <div class="project-categories">
@@ -115,5 +115,5 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+<script src="/static/js/projects.js"></script>
 {% endblock %}
